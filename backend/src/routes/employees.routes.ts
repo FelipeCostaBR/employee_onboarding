@@ -18,6 +18,17 @@ employeesRouter.get('/', (request, response) => {
     }
 });
 
+employeesRouter.get('/:id', (request, response) => {
+    try {
+        const { id } = request.params;
+        const employee = employeesRepository.findById(id);
+
+        return response.json(employee);
+    } catch (err) {
+        return response.status(400).json({ error: err.message });
+    }
+});
+
 employeesRouter.post('/', (request, response) => {
     try {
         const { email, firstName, lastName, salary } = request.body;
