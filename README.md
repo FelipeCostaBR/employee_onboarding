@@ -21,19 +21,19 @@
 * Node - libraries (cors, uuid) - Framework (Express)
 
 
-### How to run this project
-# Clone the repository using git
+## How to run this project
+### Clone the repository using git
 * $ git clone  https://github.com/FelipeCostaBR/employee_onboarding.git
 * $ cd employee_onboarding
 
-## Run the server and isntall the dependencies
+### Run the server and isntall the dependencies
 * $ cd employee_onboarding/backend
 * $ yarn
 * $ yarn dev
 
 ### Open a new terminal and execute the commands bellow
 
-## Run the frontend and isntall the dependencies
+### Run the frontend and isntall the dependencies
 * $ cd employee_onboarding/frontend
 * $ yarn
 * $ yarn start
